@@ -21,7 +21,7 @@ function addAcordeon(title, itens) {
                                 <h1 class="display-5">${title}</h1>
                             </button>
                         </h2>
-                        <div id="${id}" class="accordion-collapse" data-bs-parent="#target">
+                        <div id="${id}" class="accordion-collapse collapse" data-bs-parent="#target">
                             <div class="accordion-body"><div class="container">`;
     for (n in itens) {
         // let question = itens[n].replace(/<ol>/g, "").replace(/<li>/g, "<p>").replace(/<\/li>/g, "</p>").replace(/<\/ol>/g, "").replace(/<ul>/g, "").replace(/<\/ul>/g, "");
@@ -31,7 +31,7 @@ function addAcordeon(title, itens) {
             .replace(/<table>/g, "<table class='table m-auto w-50 bg-light'>")
             .replace(/<td>/g, "<td class='bg-light'>")
             .replace(/<td class='text-center'/g, "<td class='text-center bg-light'");
-        
+
         accItem += `<div class="bg-light my-2 p-2 border border-primary border-1 rounded rounded-2"><p class="lead fl-recued">${parseInt(n) + 1} - ${question}</p></div>`;
     }
 
