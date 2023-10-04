@@ -17,8 +17,8 @@ function addAcordeon(title, itens) {
     var id = gerarID();
     var accItem = `<div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed px-5 bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#${id}" aria-expanded="false" aria-controls="${id}">
-                                <h1 class="display-5">${title}</h1>
+                            <button class="accordion-button collapsed px-5 bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse" data-bs-target="#${id}" aria-expanded="false" aria-controls="${id}">
+                                <h1 class="display-5">${title}</h1> <span class="badge bg-primary p-3 mx-3 mt-2">${itens.length} atividades</span>
                             </button>
                         </h2>
                         <div id="${id}" class="accordion-collapse collapse" data-bs-parent="#target">
