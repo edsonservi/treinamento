@@ -18,7 +18,9 @@ function addAcordeon(title, itens) {
     var accItem = `<div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed px-5 bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse" data-bs-target="#${id}" aria-expanded="false" aria-controls="${id}">
-                                <h1 class="display-5">${title}</h1> <span class="badge bg-primary p-3 mx-3 mt-2">${itens.length} atividades</span>
+                                <i class="bi bi-arrow-right-square display-5 pe-3 text-primary"></i>
+                                <span class="badge bg-primary p-3 mx-3 mt-2">${itens.length} atividades</span>
+                                <h1 class="display-5">${title}</h1>
                             </button>
                         </h2>
                         <div id="${id}" class="accordion-collapse collapse" data-bs-parent="#target">
