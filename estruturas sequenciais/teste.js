@@ -1,19 +1,6 @@
-var area = 500;
-var capA = 108;
-var capB = 21.6;
-var resto = 500;
-var lata1 = 0;
-var lata2 = 0;
-while (resto > 0) {
-    if (resto >= 108) {
-        resto = resto - 108;
-        lata1++;
-    } else if (resto > 0) {
-        resto = resto - 21.6;
-        lata2++;
-    }
+var num = 171
+for (n = 0; n <= num; n++) {
+    let numero = parseFloat(n / num).toFixed(3);
+    console.log(`${n} => ${numero}`);
 }
 
-console.log(lata1);
-console.log(lata2);
-console.log(resto);
